@@ -1,0 +1,265 @@
+fileFormatVersion: 2
+guid: 55eb51ed53bef6c4d8aab40d0bc36549
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Bay_Face_0
+    100002: Bay_Face_1
+    100004: Blocks01
+    100006: Blocks02
+    100008: Blocks03
+    100010: Blocks04
+    100012: Cable_Brac
+    100014: Cables01
+    100016: Cinema_4D_Editor
+    100018: Docking_B0
+    100020: Docking_Ba
+    100022: Hub
+    100024: Mesh01
+    100026: Mesh02
+    100028: Mesh03
+    100030: Mesh04
+    100032: Mesh05
+    100034: Mesh06
+    100036: Mesh07
+    100038: Mesh08
+    100040: Mesh09
+    100042: Mesh10
+    100044: Object01
+    100046: Object02
+    100048: //RootNode
+    100050: Space_Station_V
+    100052: Spoke01
+    100054: Spoke02
+    100056: Spoke03
+    100058: Spoke04
+    100060: Spoke_Supp
+    100062: Wheel01
+    100064: Wheel02
+    100066: Wheel_Gird
+    400000: Bay_Face_0
+    400002: Bay_Face_1
+    400004: Blocks01
+    400006: Blocks02
+    400008: Blocks03
+    400010: Blocks04
+    400012: Cable_Brac
+    400014: Cables01
+    400016: Cinema_4D_Editor
+    400018: Docking_B0
+    400020: Docking_Ba
+    400022: Hub
+    400024: Mesh01
+    400026: Mesh02
+    400028: Mesh03
+    400030: Mesh04
+    400032: Mesh05
+    400034: Mesh06
+    400036: Mesh07
+    400038: Mesh08
+    400040: Mesh09
+    400042: Mesh10
+    400044: Object01
+    400046: Object02
+    400048: //RootNode
+    400050: Space_Station_V
+    400052: Spoke01
+    400054: Spoke02
+    400056: Spoke03
+    400058: Spoke04
+    400060: Spoke_Supp
+    400062: Wheel01
+    400064: Wheel02
+    400066: Wheel_Gird
+    2000000: Cinema_4D_Editor
+    2100000: 'Material #26'
+    2100002: 'Material #25'
+    2100004: block
+    2100006: cable brackets
+    2100008: cables
+    2100010: Docking bay
+    2100012: hubface
+    2100014: Wheel 1
+    2100016: spoke support
+    2100018: spokes
+    2100020: wheel girders
+    2100022: Wheel01
+    2300000: Bay_Face_0
+    2300002: Bay_Face_1
+    2300004: Blocks01
+    2300006: Blocks02
+    2300008: Blocks03
+    2300010: Blocks04
+    2300012: Cable_Brac
+    2300014: Cables01
+    2300016: Docking_B0
+    2300018: Docking_Ba
+    2300020: Hub
+    2300022: Mesh01
+    2300024: Mesh02
+    2300026: Mesh03
+    2300028: Mesh04
+    2300030: Mesh05
+    2300032: Mesh06
+    2300034: Mesh07
+    2300036: Mesh08
+    2300038: Mesh09
+    2300040: Mesh10
+    2300042: Object01
+    2300044: Object02
+    2300046: Spoke01
+    2300048: Spoke02
+    2300050: Spoke03
+    2300052: Spoke04
+    2300054: Spoke_Supp
+    2300056: Wheel01
+    2300058: Wheel02
+    2300060: Wheel_Gird
+    3300000: Bay_Face_0
+    3300002: Bay_Face_1
+    3300004: Blocks01
+    3300006: Blocks02
+    3300008: Blocks03
+    3300010: Blocks04
+    3300012: Cable_Brac
+    3300014: Cables01
+    3300016: Docking_B0
+    3300018: Docking_Ba
+    3300020: Hub
+    3300022: Mesh01
+    3300024: Mesh02
+    3300026: Mesh03
+    3300028: Mesh04
+    3300030: Mesh05
+    3300032: Mesh06
+    3300034: Mesh07
+    3300036: Mesh08
+    3300038: Mesh09
+    3300040: Mesh10
+    3300042: Object01
+    3300044: Object02
+    3300046: Spoke01
+    3300048: Spoke02
+    3300050: Spoke03
+    3300052: Spoke04
+    3300054: Spoke_Supp
+    3300056: Wheel01
+    3300058: Wheel02
+    3300060: Wheel_Gird
+    4300000: Mesh01
+    4300002: Mesh02
+    4300004: Mesh03
+    4300006: Mesh04
+    4300008: Mesh05
+    4300010: Mesh06
+    4300012: Mesh07
+    4300014: Mesh08
+    4300016: Mesh09
+    4300018: Mesh10
+    4300020: Object01
+    4300022: Object02
+    4300024: Blocks01
+    4300026: Blocks02
+    4300028: Blocks03
+    4300030: Blocks04
+    4300032: Cable_Brac
+    4300034: Cables01
+    4300036: Docking_Ba
+    4300038: Bay_Face_0
+    4300040: Bay_Face_1
+    4300042: Docking_B0
+    4300044: Hub
+    4300046: Spoke_Supp
+    4300048: Spoke01
+    4300050: Spoke02
+    4300052: Spoke03
+    4300054: Spoke04
+    4300056: Wheel_Gird
+    4300058: Wheel01
+    4300060: Wheel02
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
