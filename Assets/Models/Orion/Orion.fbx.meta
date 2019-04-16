@@ -1,0 +1,219 @@
+fileFormatVersion: 2
+guid: fabecfa768650774aa7712fd28dbd4ae
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Aft
+    100002: Antennas
+    100004: Anti_Glare
+    100006: Bottom
+    100008: Bottom_Ven
+    100010: Cinema_4D_Editor
+    100012: Engine_Cow
+    100014: Exhaust
+    100016: Hull
+    100018: Logo_Secti
+    100020: mesh01
+    100022: mesh02
+    100024: mesh03
+    100026: mesh04
+    100028: mesh05
+    100030: mesh06
+    100032: mesh07
+    100034: mesh08
+    100036: mesh09
+    100038: mesh10
+    100040: mesh11
+    100042: mesh12
+    100044: mesh13
+    100046: mesh14
+    100048: mesh15
+    100050: Nose_Cap
+    100052: Orion
+    100054: //RootNode
+    100056: Top_Vent
+    100058: Windows
+    100060: Windshield
+    100062: WingL
+    100064: WingR
+    400000: Aft
+    400002: Antennas
+    400004: Anti_Glare
+    400006: Bottom
+    400008: Bottom_Ven
+    400010: Cinema_4D_Editor
+    400012: Engine_Cow
+    400014: Exhaust
+    400016: Hull
+    400018: Logo_Secti
+    400020: mesh01
+    400022: mesh02
+    400024: mesh03
+    400026: mesh04
+    400028: mesh05
+    400030: mesh06
+    400032: mesh07
+    400034: mesh08
+    400036: mesh09
+    400038: mesh10
+    400040: mesh11
+    400042: mesh12
+    400044: mesh13
+    400046: mesh14
+    400048: mesh15
+    400050: Nose_Cap
+    400052: Orion
+    400054: //RootNode
+    400056: Top_Vent
+    400058: Windows
+    400060: Windshield
+    400062: WingL
+    400064: WingR
+    2000000: Cinema_4D_Editor
+    2100000: Wing
+    2100002: Black2
+    2100004: Aft Hull
+    2100006: Black
+    2100008: Cockpit
+    2100010: Fore Hull Side
+    2100012: Fore Hull Top
+    2100014: Hatch
+    2100016: Logo Side
+    2100018: Ribs
+    2100020: Side
+    2100022: Top
+    2100024: Window
+    2300000: mesh01
+    2300002: mesh02
+    2300004: mesh03
+    2300006: mesh04
+    2300008: mesh05
+    2300010: mesh06
+    2300012: mesh07
+    2300014: mesh08
+    2300016: mesh10
+    2300018: mesh11
+    2300020: mesh12
+    2300022: mesh13
+    2300024: mesh14
+    2300026: mesh15
+    2300028: WingL
+    2300030: WingR
+    3300000: mesh01
+    3300002: mesh02
+    3300004: mesh03
+    3300006: mesh04
+    3300008: mesh05
+    3300010: mesh06
+    3300012: mesh07
+    3300014: mesh08
+    3300016: mesh10
+    3300018: mesh11
+    3300020: mesh12
+    3300022: mesh13
+    3300024: mesh14
+    3300026: mesh15
+    3300028: WingL
+    3300030: WingR
+    4300000: WingL
+    4300002: WingR
+    4300004: mesh01
+    4300006: mesh02
+    4300008: mesh03
+    4300010: mesh04
+    4300012: mesh05
+    4300014: mesh06
+    4300016: mesh07
+    4300018: mesh08
+    4300020: mesh10
+    4300022: mesh11
+    4300024: mesh12
+    4300026: mesh13
+    4300028: mesh14
+    4300030: mesh15
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
