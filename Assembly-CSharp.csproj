@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\Background1.cs" />
     <Compile Include="Assets\Scripts\BigBoid.cs" />
     <Compile Include="Assets\Scripts\Path.cs" />
+    <Compile Include="Assets\Scripts\Scene1Manager.cs" />
     <Compile Include="Assets\Scripts\Seek.cs" />
     <Compile Include="Assets\Scripts\SpinSpaceship.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
