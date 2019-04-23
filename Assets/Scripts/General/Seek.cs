@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Seek : MonoBehaviour
 {
-    public float Mass = 15;
+    private float Mass = 15;
     public float MaxVelocity = 3;
-    public float MaxForce = 15;
+    private float MaxForce = 15;
 
     private Vector3 velocity;
     public Transform target;

@@ -14,11 +14,8 @@ public class SceneController : MonoBehaviour
     {
         StartCoroutine("NextScene");
         SceneNumber--; //Adjust scene number to actually load the correct one.
-
-        //Find the music gameobject and don't delete when loading new scene. 
-        Audio = GameObject.FindGameObjectWithTag("Audio");
-        DontDestroyOnLoad(Audio);
     }
+
 
     //Update is called once per frame
     void Update()

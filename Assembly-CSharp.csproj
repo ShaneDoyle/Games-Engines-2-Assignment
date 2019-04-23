@@ -61,6 +61,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\AudioScript.cs" />
+    <Compile Include="Assets\FG3D\Animation\Mecanim\ControlScript.cs" />
+    <Compile Include="Assets\FG3D\Vendor\Unity\Shaders\Hair\HairRenderer.cs" />
+    <Compile Include="Assets\FG3D\Vendor\Unity\Shaders\UniqueShadow\UniqueShadow.cs" />
+    <Compile Include="Assets\FG3D\Vendor\Unity\Shaders\UniqueShadow\UniqueShadowSun.cs" />
+    <Compile Include="Assets\MonkeyMovement.cs" />
     <Compile Include="Assets\Scene3Manager.cs" />
     <Compile Include="Assets\Scene6Background.cs" />
     <Compile Include="Assets\SceneController.cs" />
@@ -83,6 +88,22 @@
     <Compile Include="Assets\Scripts\Scene 5\Scene5Background.cs" />
     <Compile Include="Assets\Scripts\Scene 5\Scene5Camera.cs" />
     <Compile Include="Assets\Scripts\Scene 5\Scene5SpaceStation.cs" />
+    <None Include="Assets\FG3D\Vendor\Unity\Shaders\Standard\StandardSpecular-doublesided.shader" />
+    <None Include="Assets\FG3D\Vendor\Unity\Shaders\Hair\Hair_Universal.shader" />
+    <None Include="Assets\FG3D\Vendor\Unity\Shaders\Skin\Volund_UnityStandardCore.cginc" />
+    <None Include="Assets\FG3D\Vendor\Unity\Shaders\UniqueShadow\UniqueShadow_ShadowSample.cginc" />
+    <None Include="Assets\FG3D\Vendor\Unity\Shaders\Hair\Hair_UnityStandardInput.cginc" />
+    <None Include="Assets\FG3D\Readme.txt" />
+    <None Include="Assets\FG3D\Vendor\Unity\Shaders\Standard\Standard-doublesided.shader" />
+    <None Include="Assets\FG3D\Vendor\Unity\Shaders\Standard\Standard-2pass-doublesided-half depth.shader" />
+    <None Include="Assets\FG3D\Shaders\Standard-Two-Sided_Soft-Blend.shader" />
+    <None Include="Assets\FG3D\Vendor\Unity\Shaders\Standard\Standard-2pass-doublesided.shader" />
+    <None Include="Assets\FG3D\Vendor\Unity\Shaders\Skin\MorphSkinDeferred.shader" />
+    <None Include="Assets\FG3D\Vendor\Unity\Shaders\Hair\Hair_setup.cginc" />
+    <None Include="Assets\FG3D\Vendor\Unity\Shaders\Skin\Volund_UnityStandardInput.cginc" />
+    <None Include="Assets\FG3D\Vendor\Unity\Shaders\Hair\Hair_UnityStandardCore.cginc" />
+    <None Include="Assets\FG3D\Vendor\Unity\Shaders\UniqueShadow\UniqueShadow_DepthOnly.shader" />
+    <None Include="Assets\FG3D\Vendor\Unity\Shaders\Skin\Volund_StandardSpecularCharacter.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Shane/College/Year 4/Semester 2/Games Engines 2/Assignment/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

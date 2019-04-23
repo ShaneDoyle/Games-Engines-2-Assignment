@@ -5,7 +5,7 @@ using UnityEngine;
 public class Scene3Background : MonoBehaviour
 {
     //Variable
-    private float xSpin = 0f;
+    private float SpinSpeed = 6f;
 
     //Start is called before the first frame update
     void Start()
@@ -16,6 +16,6 @@ public class Scene3Background : MonoBehaviour
     //Update is called once per frame
     void Update()
     {
-        transform.Rotate(transform.up, 6 * Time.deltaTime, Space.World);
+        transform.Rotate(transform.up, SpinSpeed * Time.deltaTime, Space.World);
     }
 }
