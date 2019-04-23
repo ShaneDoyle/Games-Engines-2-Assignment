@@ -26,7 +26,9 @@ public class MonkeyMovement : MonoBehaviour
             myAnimator.SetBool("Jumping", true);
             Invoke("StopJumping", 0.1f);
         }
+    }
 
+        /*
         if (Input.GetKey("q") && (myAnimator.GetInteger("CurrentAction") == 0))
         {
             //Rotate the character procedurally based on Time.deltaTime.  This will give the illusion of moving
@@ -46,9 +48,9 @@ public class MonkeyMovement : MonoBehaviour
         }
 
         //Same thing for E key, just rotating the other way!
-        if (Input.GetKey("e") && (myAnimator.GetInteger("CurrentAction") == 0))
+        if (Input.GetKey("d") && (myAnimator.GetInteger("CurrentAction") == 0))
         {
-            transform.Rotate(Vector3.up * Time.deltaTime * 100.0f);
+            transform.Rotate(Vector3.up * Time.deltaTime * 150.0f);
             if ((Input.GetAxis("Vertical") == 0f) && (Input.GetAxis("Horizontal") == 0))
             {
                 myAnimator.SetBool("TurningRight", true);
@@ -60,6 +62,7 @@ public class MonkeyMovement : MonoBehaviour
             myAnimator.SetBool("TurningRight", false);
         }
 
+        /*
 
         if (Input.GetKeyDown("1"))
         {
@@ -132,8 +135,10 @@ public class MonkeyMovement : MonoBehaviour
 
     }
 
+    */
     void StopJumping()
     {
         myAnimator.SetBool("Jumping", false);
     }
+    
 }
