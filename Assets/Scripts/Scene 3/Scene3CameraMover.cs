@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Scene3CameraMover : MonoBehaviour
 {
+    //Variables
     public float CameraMovementSpeed = 0.0003f;
+
     //Start is called before the first frame update
     void Start()
     {
