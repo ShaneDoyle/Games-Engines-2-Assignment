@@ -16,6 +16,6 @@ public class Scene3Background : MonoBehaviour
     //Update is called once per frame
     void Update()
     {
-        transform.Rotate(transform.up, 10 * Time.deltaTime, Space.World);
+        transform.Rotate(transform.up, 6 * Time.deltaTime, Space.World);
     }
 }

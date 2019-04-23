@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\General\LookAt.cs" />
     <Compile Include="Assets\Scripts\General\Path.cs" />
     <Compile Include="Assets\Scripts\General\Seek.cs" />
     <Compile Include="Assets\Scripts\General\SpinSpaceship.cs" />
@@ -67,9 +68,11 @@
     <Compile Include="Assets\Scripts\Scene 1\BigBoid.cs" />
     <Compile Include="Assets\Scripts\Scene 1\Scene1Manager.cs" />
     <Compile Include="Assets\Scripts\Scene 2\Background2.cs" />
+    <Compile Include="Assets\Scripts\Scene 2\Scene2Manager.cs" />
     <Compile Include="Assets\Scripts\Scene 2\SpaceStationScene2.cs" />
     <Compile Include="Assets\Scripts\Scene 3\Scene3Background.cs" />
     <Compile Include="Assets\Scripts\Scene 3\Scene3CameraMover.cs" />
+    <Compile Include="Assets\Scripts\Scene 3\Scene3ScaleOrion.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Shane/College/Year 4/Semester 2/Games Engines 2/Assignment/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
