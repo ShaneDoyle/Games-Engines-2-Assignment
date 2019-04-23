@@ -61,6 +61,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scene3Manager.cs" />
+    <Compile Include="Assets\Scene6Background.cs" />
+    <Compile Include="Assets\SceneController.cs" />
     <Compile Include="Assets\Scripts\General\LookAt.cs" />
     <Compile Include="Assets\Scripts\General\Path.cs" />
     <Compile Include="Assets\Scripts\General\Seek.cs" />
@@ -77,6 +79,9 @@
     <Compile Include="Assets\Scripts\Scene 4\Scene4Background.cs" />
     <Compile Include="Assets\Scripts\Scene 4\Scene4CameraMover.cs" />
     <Compile Include="Assets\Scripts\Scene 4\Scene4SpinOrion.cs" />
+    <Compile Include="Assets\Scripts\Scene 5\Scene5Background.cs" />
+    <Compile Include="Assets\Scripts\Scene 5\Scene5Camera.cs" />
+    <Compile Include="Assets\Scripts\Scene 5\Scene5SpaceStation.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Shane/College/Year 4/Semester 2/Games Engines 2/Assignment/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
