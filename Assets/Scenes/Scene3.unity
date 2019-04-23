@@ -363,7 +363,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 307513238}
   m_LocalRotation: {x: 0, y: 0, z: -0.0000009362675, w: 1}
-  m_LocalPosition: {x: -0.02, y: 0.01, z: 5.58}
+  m_LocalPosition: {x: -0.02, y: -0.002, z: 5.358}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -426,7 +426,7 @@ GameObject:
   - component: {fileID: 1407845577}
   - component: {fileID: 1407845576}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Scene3Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -441,9 +441,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1407845575}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cd40ced8a0219740bdfdc591ce959e8, type: 3}
+  m_Script: {fileID: 11500000, guid: 7685e4d56f4c1934f97e4163dfdaaaaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NextSceneWait: 33
+  SceneNumber: 4
 --- !u!65 &1407845577
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -531,30 +533,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400052, guid: fabecfa768650774aa7712fd28dbd4ae, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.17348288
-      objectReference: {fileID: 0}
-    - target: {fileID: 400052, guid: fabecfa768650774aa7712fd28dbd4ae, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.007574429
-      objectReference: {fileID: 0}
-    - target: {fileID: 400052, guid: fabecfa768650774aa7712fd28dbd4ae, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.98387045
-      objectReference: {fileID: 0}
-    - target: {fileID: 400052, guid: fabecfa768650774aa7712fd28dbd4ae, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 400052, guid: fabecfa768650774aa7712fd28dbd4ae, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.042956725
-      objectReference: {fileID: 0}
-    - target: {fileID: 400052, guid: fabecfa768650774aa7712fd28dbd4ae, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -5
-      objectReference: {fileID: 0}
     - target: {fileID: 400054, guid: fabecfa768650774aa7712fd28dbd4ae, type: 3}
       propertyPath: m_LocalPosition.x
       value: 22.63
@@ -610,6 +588,30 @@ PrefabInstance:
     - target: {fileID: 400054, guid: fabecfa768650774aa7712fd28dbd4ae, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 400052, guid: fabecfa768650774aa7712fd28dbd4ae, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.17348288
+      objectReference: {fileID: 0}
+    - target: {fileID: 400052, guid: fabecfa768650774aa7712fd28dbd4ae, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.007574429
+      objectReference: {fileID: 0}
+    - target: {fileID: 400052, guid: fabecfa768650774aa7712fd28dbd4ae, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.98387045
+      objectReference: {fileID: 0}
+    - target: {fileID: 400052, guid: fabecfa768650774aa7712fd28dbd4ae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 400052, guid: fabecfa768650774aa7712fd28dbd4ae, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.042956725
+      objectReference: {fileID: 0}
+    - target: {fileID: 400052, guid: fabecfa768650774aa7712fd28dbd4ae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fabecfa768650774aa7712fd28dbd4ae, type: 3}
@@ -716,7 +718,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Mass: 15
-  MaxVelocity: 0.75
+  MaxVelocity: 1
   MaxForce: 15
   target: {fileID: 971593072}
 --- !u!114 &1669217833
