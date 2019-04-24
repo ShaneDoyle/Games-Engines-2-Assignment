@@ -5,30 +5,71 @@ using UnityEngine;
 public class MonkeyMovement : MonoBehaviour
 {
     private Animator myAnimator;
+    public float ApeSpeed = 0;
 
-    // The start method is called when the script is initalized, before other stuff in the scripts start happening.
+    //Start is called before the first frame update.
     void Start()
     {
         myAnimator = GetComponent<Animator>();
+        ApeSpeed = myAnimator.speed;
+        myAnimator.speed = Random.Range(1f, 1.5f);
     }
 
-    // Update is called once per frame so this is a great place to listen for input from the player to see if they have
+    //Update is called once per frame. 
     void Update()
     {
 
-        myAnimator.SetFloat("VSpeed", Input.GetAxis("Vertical"));
+        myAnimator.SetFloat("VSpeed", 1); //Input.GetAxis("Vertical"));
         myAnimator.SetFloat("HSpeed", Input.GetAxis("Horizontal"));
 
+        //Turn left.
+        if (Input.GetKey("a") && (myAnimator.GetInteger("CurrentAction") == 0))
+        {
+            transform.Rotate(Vector3.down * Time.deltaTime * 150.0f);
 
+            //Also, IF we're currently standing still (both vertically and horizontally)
+            if ((Input.GetAxis("Vertical") == 0f) && (Input.GetAxis("Horizontal") == 0))
+            {
+                myAnimator.SetBool("TurningLeft", true);
+            }
+
+        }
+        else
+        {
+            myAnimator.SetBool("TurningLeft", false);
+        }
+
+
+        //Turn right.
+        if (Input.GetKey("d") && (myAnimator.GetInteger("CurrentAction") == 0))
+        {
+            transform.Rotate(Vector3.up * Time.deltaTime * 150.0f);
+            if ((Input.GetAxis("Vertical") == 0f) && (Input.GetAxis("Horizontal") == 0))
+            {
+                myAnimator.SetBool("TurningRight", true);
+            }
+
+        }
+        else
+        {
+            myAnimator.SetBool("TurningRight", false);
+        }
+
+    }
+}
+
+
+
+        /*
         //Set Jump Boolean to true to trigger jump animation, then wait a small time and set to false so we don't jump agani.
         if (Input.GetButtonDown("Jump"))
         {
             myAnimator.SetBool("Jumping", true);
             Invoke("StopJumping", 0.1f);
         }
-    }
 
-        /*
+
+        
         if (Input.GetKey("q") && (myAnimator.GetInteger("CurrentAction") == 0))
         {
             //Rotate the character procedurally based on Time.deltaTime.  This will give the illusion of moving
@@ -46,21 +87,9 @@ public class MonkeyMovement : MonoBehaviour
         {
             myAnimator.SetBool("TurningLeft", false);
         }
+        */
 
-        //Same thing for E key, just rotating the other way!
-        if (Input.GetKey("d") && (myAnimator.GetInteger("CurrentAction") == 0))
-        {
-            transform.Rotate(Vector3.up * Time.deltaTime * 150.0f);
-            if ((Input.GetAxis("Vertical") == 0f) && (Input.GetAxis("Horizontal") == 0))
-            {
-                myAnimator.SetBool("TurningRight", true);
-            }
 
-        }
-        else
-        {
-            myAnimator.SetBool("TurningRight", false);
-        }
 
         /*
 
@@ -135,10 +164,11 @@ public class MonkeyMovement : MonoBehaviour
 
     }
 
-    */
-    void StopJumping()
+    
+        void StopJumping()
     {
         myAnimator.SetBool("Jumping", false);
     }
     
 }
+*/

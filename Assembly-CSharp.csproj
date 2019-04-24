@@ -65,6 +65,7 @@
     <Compile Include="Assets\FG3D\Vendor\Unity\Shaders\Hair\HairRenderer.cs" />
     <Compile Include="Assets\FG3D\Vendor\Unity\Shaders\UniqueShadow\UniqueShadow.cs" />
     <Compile Include="Assets\FG3D\Vendor\Unity\Shaders\UniqueShadow\UniqueShadowSun.cs" />
+    <Compile Include="Assets\MonkeyLeader.cs" />
     <Compile Include="Assets\MonkeyMovement.cs" />
     <Compile Include="Assets\Scene3Manager.cs" />
     <Compile Include="Assets\Scene6Background.cs" />
