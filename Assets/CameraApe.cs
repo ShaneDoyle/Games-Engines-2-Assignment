@@ -19,6 +19,7 @@ public class CameraApe : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         Vector3 XPOS = new Vector3(0, 0, 0);
         for (int i = 0; i < Group1Monkeys.Length; i++)
         {
@@ -33,6 +34,10 @@ public class CameraApe : MonoBehaviour
         //transform.position = Temp;
 
         transform.LookAt(XPOS);
+        */
 
+
+        transform.position = new Vector3(FollowTarget.transform.position.x, FollowTarget.transform.position.y + 3, FollowTarget.transform.position.z - 4);
+        transform.rotation = Quaternion.Euler(20, FollowTarget.transform.rotation.y, 0); // this is 90 degrees around y axis
     }
 }

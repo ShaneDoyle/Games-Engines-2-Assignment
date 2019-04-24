@@ -30,7 +30,7 @@ public class MonkeyLeader : MonoBehaviour
 
     IEnumerator StopFlee()
     {
-        yield return new WaitForSeconds(Random.Range(1f, 3f));
+        yield return new WaitForSeconds(Random.Range(1.25f, 2f));
         ChooseTarget();
         myAnimator.SetInteger("CurrentAction", 0);
         StateChange = true;
@@ -39,7 +39,7 @@ public class MonkeyLeader : MonoBehaviour
 
     IEnumerator Strafing()
     {
-        yield return new WaitForSeconds(Random.Range(0.5f, 2.5f));
+        yield return new WaitForSeconds(Random.Range(0.5f, 1.5f));
         myAnimator.SetFloat("HSpeed", Random.Range(-1f, 1f));
         yield return new WaitForSeconds(Random.Range(1.5f, 2.5f));
         myAnimator.SetFloat("HSpeed", 0);
@@ -64,6 +64,7 @@ public class MonkeyLeader : MonoBehaviour
     //Used on Death
     IEnumerator StopAnimationSpeed()
     {
+        ApeSpeed = 1.2f;
         yield return new WaitForSeconds(6f);
         ApeSpeed = 0f;
     }
@@ -71,7 +72,6 @@ public class MonkeyLeader : MonoBehaviour
     void ChooseTarget()
     {
         //Clear Target.
-        target = null;
         EnemyMonkeys = new GameObject[4];
         if (tag == "MonkeyGroup1")
         {
@@ -128,7 +128,6 @@ public class MonkeyLeader : MonoBehaviour
             {
                 StartCoroutine("StopAnimationSpeed");
                 ApeSpeedReset = false;
-                ApeSpeed = 1.0f;
             }
         }
         else
@@ -149,7 +148,12 @@ public class MonkeyLeader : MonoBehaviour
             if (target != null)
             {
                 Vector3 targetPosition = new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z);
-                transform.LookAt(targetPosition);
+                Vector3 pos = target.transform.position - transform.position;
+                Quaternion newRot = Quaternion.LookRotation(pos);
+               
+                transform.rotation = Quaternion.Lerp(transform.rotation, newRot, 0.1f);
+                
+                //transform.LookAt(targetPosition);
             }
         }
 
