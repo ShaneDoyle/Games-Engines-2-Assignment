@@ -5,11 +5,20 @@ using UnityEngine;
 public class MonkeyLeader : MonoBehaviour
 {
     private Animator myAnimator;
-    public string State = "WANDER";
+    public string State = "Pursue";
     public GameObject target;
 
     //Built in
-    private float ApeSpeed;
+    public float ApeSpeed;
+    private bool StateChange = true;
+
+    IEnumerator NewState()
+    {
+        yield return new WaitForSeconds(0.75f);
+        myAnimator.SetInteger("CurrentAction", 0);
+        StateChange = true;
+        State = "Flee";
+    }
 
     // The start method is called when the script is initalized, before other stuff in the scripts start happening.
     void Start()
@@ -33,8 +42,44 @@ public class MonkeyLeader : MonoBehaviour
         //Monkey Behaviours!
         if (State == "Pursue")
         {
-            ApeSpeed = 2.5f;
+            myAnimator.SetFloat("VSpeed", 1);
+            myAnimator.SetFloat("HSpeed", 1);
+            myAnimator.SetBool("TurningRight", false);
+            myAnimator.SetBool("TurningLeft", false);
+            ApeSpeed = 1.25f;
+
+            if (Vector3.Distance(target.transform.position, transform.position) < 2)
+            {
+                State = "Attack";
+            }
         }
+        else if (State == "Attack")
+        {
+            ApeSpeed = 1f;
+            myAnimator.SetFloat("VSpeed", 0);
+            myAnimator.SetFloat("HSpeed", 0);
+            myAnimator.SetLayerWeight(1, 1f);
+            myAnimator.SetInteger("CurrentAction", 4);
+            if (StateChange == true)
+            {
+                StateChange = false;
+                StartCoroutine("NewState");
+            }
+        }
+        else if (State == "Flee")
+        {
+            myAnimator.SetFloat("VSpeed", -1);
+            myAnimator.SetFloat("HSpeed", -1);
+            ApeSpeed = 0.75f;
+            if (Vector3.Distance(target.transform.position, transform.position) > 9)
+            {
+                State = "Pursue";
+            }
+        }
+
+
+
+
 
         if (Input.GetKey("a") && (myAnimator.GetInteger("CurrentAction") == 0))
         {
@@ -101,7 +146,7 @@ public class MonkeyLeader : MonoBehaviour
             myAnimator.SetInteger("CurrentAction", 0);
         }
 
-        myAnimator.SetFloat("VSpeed", Input.GetAxis("Vertical"));
+        //myAnimator.SetFloat("VSpeed", Input.GetAxis("Vertical"));
         myAnimator.SetFloat("HSpeed", Input.GetAxis("Horizontal"));
 
     }
