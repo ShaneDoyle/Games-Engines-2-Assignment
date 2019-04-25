@@ -6,9 +6,13 @@ public class LevelChanger : MonoBehaviour
 {
     public Animator animator;
     public GameObject[] EnemyMonkeys = new GameObject[4];
+    public GameObject SceneManager;
+    public AudioSource Apes;
+    public AudioSource Music;
     public int counter = 0;
 
     private bool MonkeysKilled = false;
+    private bool FadeMusic = false;
 
     private void Start()
     {
@@ -30,7 +34,7 @@ public class LevelChanger : MonoBehaviour
         }
         if(counter >= EnemyMonkeys.Length)
         {
-            if(MonkeysKilled == false)
+            if (MonkeysKilled == false)
             {
                 MonkeysKilled = true;
                 StartCoroutine("MonkeysDefeated");
@@ -40,13 +44,21 @@ public class LevelChanger : MonoBehaviour
         {
             counter = 0;
         }
+
+        if(FadeMusic == true)
+        {
+            Apes.volume -= 0.001f;
+            Music.volume -= 0.001f;
+        }
     }
 
     
     IEnumerator MonkeysDefeated()
     {
-        yield return new WaitForSeconds(5f);
+        
         animator.SetTrigger("FadeOut");
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(4f);
+        FadeMusic = true;
+        SceneManager.SetActive(true);
     }
 }

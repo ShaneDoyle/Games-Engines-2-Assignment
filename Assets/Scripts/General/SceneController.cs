@@ -13,7 +13,7 @@ public class SceneController : MonoBehaviour
     void Start()
     {
         StartCoroutine("NextScene");
-        SceneNumber--; //Adjust scene number to actually load the correct one.
+        //SceneNumber--; //Adjust scene number to actually load the correct one.
     }
 
 
