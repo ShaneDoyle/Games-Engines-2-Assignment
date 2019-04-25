@@ -94,6 +94,8 @@
     <Compile Include="Assets\Scripts\Scene 7\LevelChanger.cs" />
     <Compile Include="Assets\Scripts\Scene 7\MonkeyLeader.cs" />
     <Compile Include="Assets\Scripts\Scene 7\MonkeyMovement.cs" />
+    <Compile Include="Assets\SpaceSkies Free\Demo\Scripts\LookCamera.cs" />
+    <Compile Include="Assets\SpaceSkies Free\Demo\Scripts\SkyboxChanger.cs" />
     <None Include="Assets\FG3D\Vendor\Unity\Shaders\Standard\StandardSpecular-doublesided.shader" />
     <None Include="Assets\FG3D\Vendor\Unity\Shaders\Hair\Hair_Universal.shader" />
     <None Include="Assets\FG3D\Vendor\Unity\Shaders\Skin\Volund_UnityStandardCore.cginc" />

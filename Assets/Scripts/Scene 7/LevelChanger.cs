@@ -47,8 +47,8 @@ public class LevelChanger : MonoBehaviour
 
         if(FadeMusic == true)
         {
-            Apes.volume -= 0.001f;
-            Music.volume -= 0.001f;
+            Apes.volume -= 0.002f;
+            Music.volume -= 0.002f;
         }
     }
 
