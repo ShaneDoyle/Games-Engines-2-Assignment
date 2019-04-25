@@ -61,20 +61,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\AudioScript.cs" />
-    <Compile Include="Assets\CameraApe.cs" />
-    <Compile Include="Assets\FadeOut.cs" />
     <Compile Include="Assets\FG3D\Animation\Mecanim\ControlScript.cs" />
     <Compile Include="Assets\FG3D\Vendor\Unity\Shaders\Hair\HairRenderer.cs" />
     <Compile Include="Assets\FG3D\Vendor\Unity\Shaders\UniqueShadow\UniqueShadow.cs" />
     <Compile Include="Assets\FG3D\Vendor\Unity\Shaders\UniqueShadow\UniqueShadowSun.cs" />
-    <Compile Include="Assets\LevelChanger.cs" />
-    <Compile Include="Assets\MonkeyLeader.cs" />
-    <Compile Include="Assets\MonkeyMovement.cs" />
     <Compile Include="Assets\Scene3Manager.cs" />
-    <Compile Include="Assets\Scene6Background.cs" />
-    <Compile Include="Assets\SceneController.cs" />
     <Compile Include="Assets\Scripts\General\LookAt.cs" />
     <Compile Include="Assets\Scripts\General\Path.cs" />
+    <Compile Include="Assets\Scripts\General\SceneController.cs" />
     <Compile Include="Assets\Scripts\General\Seek.cs" />
     <Compile Include="Assets\Scripts\General\SpinSpaceship.cs" />
     <Compile Include="Assets\Scripts\Scene 1\Background1.cs" />
@@ -92,6 +86,14 @@
     <Compile Include="Assets\Scripts\Scene 5\Scene5Background.cs" />
     <Compile Include="Assets\Scripts\Scene 5\Scene5Camera.cs" />
     <Compile Include="Assets\Scripts\Scene 5\Scene5SpaceStation.cs" />
+    <Compile Include="Assets\Scripts\Scene 6\Scene6Background.cs" />
+    <Compile Include="Assets\Scripts\Scene 7\CameraApe.cs" />
+    <Compile Include="Assets\Scripts\Scene 7\CameraLerping.cs" />
+    <Compile Include="Assets\Scripts\Scene 7\CameraManager.cs" />
+    <Compile Include="Assets\Scripts\Scene 7\FadeOut.cs" />
+    <Compile Include="Assets\Scripts\Scene 7\LevelChanger.cs" />
+    <Compile Include="Assets\Scripts\Scene 7\MonkeyLeader.cs" />
+    <Compile Include="Assets\Scripts\Scene 7\MonkeyMovement.cs" />
     <None Include="Assets\FG3D\Vendor\Unity\Shaders\Standard\StandardSpecular-doublesided.shader" />
     <None Include="Assets\FG3D\Vendor\Unity\Shaders\Hair\Hair_Universal.shader" />
     <None Include="Assets\FG3D\Vendor\Unity\Shaders\Skin\Volund_UnityStandardCore.cginc" />
