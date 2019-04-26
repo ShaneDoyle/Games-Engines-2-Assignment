@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\AudioScript.cs" />
+    <Compile Include="Assets\EVAPod.cs" />
     <Compile Include="Assets\FG3D\Animation\Mecanim\ControlScript.cs" />
     <Compile Include="Assets\FG3D\Vendor\Unity\Shaders\Hair\HairRenderer.cs" />
     <Compile Include="Assets\FG3D\Vendor\Unity\Shaders\UniqueShadow\UniqueShadow.cs" />
