@@ -8,6 +8,9 @@ public class EVAPod : MonoBehaviour
     public GameObject EVAAstronaut;
     public PathFollow PathScript;
     public AudioSource PodBayDoors;
+    public AudioSource Eerie;
+    public AudioSource Beeping;
+    public GameObject FadeOut;
 
 
     public int PathNum = 0;
@@ -25,12 +28,21 @@ public class EVAPod : MonoBehaviour
         //Pathnum
         PathNum = PathScript.pathnum;
 
-        if(PathNum >= 9)
+        //Reduce music volume.
+        if (PathNum >= 8)
+        {
+            Eerie.volume -= 0.004f;
+            Beeping.volume -= 0.004f;
+        }
+
+        //Play sound.
+        if (PathNum >= 9)
         {
             if(PlaySound == true)
             {
                 PlaySound = false;
                 PodBayDoors.Play();
+                FadeOut.SetActive(true);
             }
         }
 
