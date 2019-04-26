@@ -65,7 +65,9 @@
     <Compile Include="Assets\FG3D\Vendor\Unity\Shaders\Hair\HairRenderer.cs" />
     <Compile Include="Assets\FG3D\Vendor\Unity\Shaders\UniqueShadow\UniqueShadow.cs" />
     <Compile Include="Assets\FG3D\Vendor\Unity\Shaders\UniqueShadow\UniqueShadowSun.cs" />
+    <Compile Include="Assets\PathFollow.cs" />
     <Compile Include="Assets\Scene3Manager.cs" />
+    <Compile Include="Assets\Scripts\CameraLocations.cs" />
     <Compile Include="Assets\Scripts\General\LookAt.cs" />
     <Compile Include="Assets\Scripts\General\Path.cs" />
     <Compile Include="Assets\Scripts\General\SceneController.cs" />
@@ -94,6 +96,7 @@
     <Compile Include="Assets\Scripts\Scene 7\LevelChanger.cs" />
     <Compile Include="Assets\Scripts\Scene 7\MonkeyLeader.cs" />
     <Compile Include="Assets\Scripts\Scene 7\MonkeyMovement.cs" />
+    <Compile Include="Assets\Scripts\Scene 9\Scene9Camera.cs" />
     <Compile Include="Assets\SpaceSkies Free\Demo\Scripts\LookCamera.cs" />
     <Compile Include="Assets\SpaceSkies Free\Demo\Scripts\SkyboxChanger.cs" />
     <None Include="Assets\FG3D\Vendor\Unity\Shaders\Standard\StandardSpecular-doublesided.shader" />

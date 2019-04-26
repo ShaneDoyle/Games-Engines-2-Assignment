@@ -1,0 +1,233 @@
+fileFormatVersion: 2
+guid: 21b70894d0bf0974aab0802544f6ed48
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Claws
+    100002: default01
+    100004: default01.target
+    100006: Door
+    100008: DoorBotto1
+    100010: DoorBottom
+    100012: DoorFrame
+    100014: DoorTop
+    100016: FrontTrim
+    100018: FwdDetail
+    100020: HAL Eye
+    100022: HAL EyeFra
+    100024: HAL EyeGla
+    100026: HeadlightL
+    100028: Headlights
+    100030: Hull
+    100032: Indents
+    100034: Joint
+    100036: LeftThrust
+    100038: Light02
+    100040: //RootNode
+    100042: Projection
+    100044: Radar
+    100046: RightThrus
+    100048: ThrusterBa
+    100050: Thrusters
+    100052: Window
+    100054: WindowTrim
+    400000: Claws
+    400002: default01
+    400004: default01.target
+    400006: Door
+    400008: DoorBotto1
+    400010: DoorBottom
+    400012: DoorFrame
+    400014: DoorTop
+    400016: FrontTrim
+    400018: FwdDetail
+    400020: HAL Eye
+    400022: HAL EyeFra
+    400024: HAL EyeGla
+    400026: HeadlightL
+    400028: Headlights
+    400030: Hull
+    400032: Indents
+    400034: Joint
+    400036: LeftThrust
+    400038: Light02
+    400040: //RootNode
+    400042: Projection
+    400044: Radar
+    400046: RightThrus
+    400048: ThrusterBa
+    400050: Thrusters
+    400052: Window
+    400054: WindowTrim
+    2100000: White Matte
+    2100002: Light01
+    2100004: PodDoor01
+    2100006: HAL Eye
+    2100008: Black Matte
+    2100010: HALEyeGlass
+    2100012: White Neon
+    2100014: FrontTrim
+    2100016: FwdDetail
+    2100018: ThrusterTrim
+    2100020: WindowTrim01
+    2300000: Claws
+    2300002: Door
+    2300004: DoorBotto1
+    2300006: DoorBottom
+    2300008: DoorFrame
+    2300010: DoorTop
+    2300012: FrontTrim
+    2300014: FwdDetail
+    2300016: HAL Eye
+    2300018: HAL EyeFra
+    2300020: HAL EyeGla
+    2300022: HeadlightL
+    2300024: Headlights
+    2300026: Hull
+    2300028: Indents
+    2300030: Joint
+    2300032: LeftThrust
+    2300034: Light02
+    2300036: Projection
+    2300038: Radar
+    2300040: RightThrus
+    2300042: ThrusterBa
+    2300044: Thrusters
+    2300046: Window
+    2300048: WindowTrim
+    3300000: Claws
+    3300002: Door
+    3300004: DoorBotto1
+    3300006: DoorBottom
+    3300008: DoorFrame
+    3300010: DoorTop
+    3300012: FrontTrim
+    3300014: FwdDetail
+    3300016: HAL Eye
+    3300018: HAL EyeFra
+    3300020: HAL EyeGla
+    3300022: HeadlightL
+    3300024: Headlights
+    3300026: Hull
+    3300028: Indents
+    3300030: Joint
+    3300032: LeftThrust
+    3300034: Light02
+    3300036: Projection
+    3300038: Radar
+    3300040: RightThrus
+    3300042: ThrusterBa
+    3300044: Thrusters
+    3300046: Window
+    3300048: WindowTrim
+    4300000: Claws
+    4300002: Door
+    4300004: DoorBottom
+    4300006: DoorBotto1
+    4300008: DoorFrame
+    4300010: DoorTop
+    4300012: FrontTrim
+    4300014: FwdDetail
+    4300016: HAL Eye
+    4300018: HAL EyeFra
+    4300020: HAL EyeGla
+    4300022: HeadlightL
+    4300024: Headlights
+    4300026: Hull
+    4300028: Indents
+    4300030: Joint
+    4300032: LeftThrust
+    4300034: Light02
+    4300036: Projection
+    4300038: Radar
+    4300040: RightThrus
+    4300042: ThrusterBa
+    4300044: Thrusters
+    4300046: Window
+    4300048: WindowTrim
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -18,7 +18,6 @@ public class Path : MonoBehaviour
         {
             Transform prev = transform.GetChild(i - 1);
             Transform next = transform.GetChild(i % transform.childCount);
-            Gizmos.DrawLine(prev.transform.position, next.transform.position);
             Gizmos.DrawSphere(prev.position, 1);
             Gizmos.DrawSphere(next.position, 1);
         }

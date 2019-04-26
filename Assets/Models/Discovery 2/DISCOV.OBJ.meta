@@ -1,0 +1,173 @@
+fileFormatVersion: 2
+guid: 4e80c76a04828d14bad753930ec43632
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ae35
+    100002: ae35_ant
+    100004: command_module
+    100006: couplings
+    100008: //RootNode
+    100010: DISCOV_root
+    100012: engine
+    100014: engine1
+    100016: engine2
+    100018: keel
+    100020: neck
+    100022: port
+    100024: shaft
+    100026: starboard
+    100028: struts
+    400000: ae35
+    400002: ae35_ant
+    400004: command_module
+    400006: couplings
+    400008: //RootNode
+    400010: DISCOV_root
+    400012: engine
+    400014: engine1
+    400016: engine2
+    400018: keel
+    400020: neck
+    400022: port
+    400024: shaft
+    400026: starboard
+    400028: struts
+    2100000: No Name
+    2100002: ae35Mat
+    2100004: ae35_antMat
+    2100006: command_moduleMat
+    2100008: couplingsMat
+    2100010: engine2Mat
+    2100012: keelMat
+    2100014: neckMat
+    2100016: portMat
+    2100018: shaftMat
+    2100020: starboardMat
+    2100022: strutsMat
+    2300000: ae35
+    2300002: ae35_ant
+    2300004: command_module
+    2300006: couplings
+    2300008: engine
+    2300010: engine1
+    2300012: engine2
+    2300014: keel
+    2300016: neck
+    2300018: port
+    2300020: shaft
+    2300022: starboard
+    2300024: struts
+    3300000: ae35
+    3300002: ae35_ant
+    3300004: command_module
+    3300006: couplings
+    3300008: engine
+    3300010: engine1
+    3300012: engine2
+    3300014: keel
+    3300016: neck
+    3300018: port
+    3300020: shaft
+    3300022: starboard
+    3300024: struts
+    4300000: engine
+    4300002: engine1
+    4300004: ae35
+    4300006: ae35_ant
+    4300008: command_module
+    4300010: couplings
+    4300012: engine2
+    4300014: keel
+    4300016: neck
+    4300018: port
+    4300020: shaft
+    4300022: starboard
+    4300024: struts
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

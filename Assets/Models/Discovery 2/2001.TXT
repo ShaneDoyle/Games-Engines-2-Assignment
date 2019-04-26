@@ -1,0 +1,37 @@
+USS Discovery
+Discov.obj
+
+Model created by:
+Matt Willson
+mwillson@echobridge.com
+
+Found on Avalon
+http://avalon.viewpoint.com/
+
+Conversions by:
+B.J. West
+2001: A Space Odyssey 3D Model Archive
+http://www.strafe.com/2001/
+
+
+"U.S.S. Discovery" from "2001: A Space Odyssey"
+
+	During the early '60s, director Stanley Kubrick contacted renowned sci-fi author Arthur C. Clarke in search of a story which he could turn into that "quintessential good science fiction movie." Kubrick's definition of "good" led him to consult with many aerospace engineers and scientists in order to ensure scientific accuracy. (He even set up an insurance policy for the film with Lloyds of London in the event that alien life were really contacted before the film was completed.)
+
+	Early designs for "Discovery," the interplanetary exploration vehicle featured so prominently in the film, looked much more like the Russian "Leonov" from the sequel, "2010: The Year We Make Contact." "Leonov's" external habitat section, which rotates to produce centrifugal "gravity," would likely have been too difficult to photograph with the techniques available at the time of the first film. So, the habitat section of "Discovery" was enclosed in the command module. 
+
+	Also, an electric, or ion-type engine powered by an atomic reactor would need radiators to remove waste heat. But the radiator design looked too much like "wings," which Kubrick feared would confuse the audience. Thus, "Discovery" lost her radiators. (The model for "Leonov" had a set of radiator panels near the engine pod.) An electric engine is also designed to run continuously due to its low thrust, and that might have an impact on the design of the revolving habitat section.
+
+	These problems were "solved" in the sequel by giving "Discovery" a set of higher thrust, and much more visually dramatic, plasma engines. (The reactor for such an engine would still need radiators, but you might argue that most of "Discovery's" waste heat was dumped overboard with the plasma exhaust--the way current rockets and high-performance jets work.)
+
+	By comparison to "Leonov", "Discovery" is extravagantly large. Long duration Earth-orbit missions have proven the feasibility of smaller habitats. As in both movies, cryogenic suspension techniques may one day be used to lower the payload cost of long missions. (Although, I would think that, unlike both movies, the "sleepers" would be stored outside of the gravitated habitats to reduce the wear-and-tear on their bodies.)
+
+	Ultimately, real-life, manned, interplanetary ships will probably not look like "Discovery" or "Leonov." Instead, they will probably be collections of habitat and storage modules stacked into a bowl-shaped heat shield used for aerobraking. (Make such a ship big enough, and it might look like one of James Blish's "Cities In Flight" on its Spin-Dizzies.)
+
+	Accurate or not, the previews of tomorrow's spaceflight afforded by "Discovery", "Leonov" and others are an inspiration to those who may one day build the real thing.
+
+USS Discovery
+Model created by 
+Matt Willson
+
+
