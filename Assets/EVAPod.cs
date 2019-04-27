@@ -31,8 +31,8 @@ public class EVAPod : MonoBehaviour
         //Reduce music volume.
         if (PathNum >= 8)
         {
-            Eerie.volume -= 0.004f;
-            Beeping.volume -= 0.004f;
+            Eerie.volume -= 0.001f;
+            Beeping.volume -= 0.001f;
         }
 
         //Play sound.

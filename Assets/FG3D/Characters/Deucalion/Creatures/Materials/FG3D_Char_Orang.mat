@@ -85,7 +85,7 @@ Material:
     - _PlaneReflectionBumpScale: 0.4
     - _SmoothnessInAlbedo: 0
     - _SmoothnessTextureChannel: 0
-    - _SmoothnessTweak1: 0.96
+    - _SmoothnessTweak1: 4
     - _SmoothnessTweak2: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -97,4 +97,4 @@ Material:
     - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
     - _OverlayColor: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SpecularMapColorTweak: {r: 1, g: 0.9485294, b: 0.95030427, a: 1}
+    - _SpecularMapColorTweak: {r: 0.85882354, g: 0.4392157, b: 0.41960785, a: 1}

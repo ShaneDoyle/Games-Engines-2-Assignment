@@ -77,6 +77,8 @@
     <Compile Include="Assets\Scripts\Scene 1\Background1.cs" />
     <Compile Include="Assets\Scripts\Scene 1\BigBoid.cs" />
     <Compile Include="Assets\Scripts\Scene 1\Scene1Manager.cs" />
+    <Compile Include="Assets\Scripts\Scene 10\Scene10Camera.cs" />
+    <Compile Include="Assets\Scripts\Scene 10\StarGate.cs" />
     <Compile Include="Assets\Scripts\Scene 2\Background2.cs" />
     <Compile Include="Assets\Scripts\Scene 2\Scene2Manager.cs" />
     <Compile Include="Assets\Scripts\Scene 2\SpaceStationScene2.cs" />
