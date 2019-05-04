@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class EVAPod : MonoBehaviour
@@ -15,6 +16,7 @@ public class EVAPod : MonoBehaviour
 
     public int PathNum = 0;
     private bool PlaySound = true;
+    private bool LoadScene = true;
 
     //Start is called before the first frame update
     void Start()
@@ -33,6 +35,12 @@ public class EVAPod : MonoBehaviour
         {
             Eerie.volume -= 0.001f;
             Beeping.volume -= 0.001f;
+            if(LoadScene == true)
+            {
+                LoadScene = false;
+                StartCoroutine("NextScene");
+            }
+
         }
 
         //Play sound.
@@ -53,4 +61,12 @@ public class EVAPod : MonoBehaviour
             EVAAstronaut.SetActive(true);
         }
     }
+
+
+    IEnumerator NextScene()
+    {
+        yield return new WaitForSeconds(25);
+        SceneManager.LoadScene(10);
+    }
+
 }
