@@ -67,6 +67,8 @@
     <Compile Include="Assets\FG3D\Vendor\Unity\Shaders\UniqueShadow\UniqueShadow.cs" />
     <Compile Include="Assets\FG3D\Vendor\Unity\Shaders\UniqueShadow\UniqueShadowSun.cs" />
     <Compile Include="Assets\PathFollow.cs" />
+    <Compile Include="Assets\Scene10EyeVideo.cs" />
+    <Compile Include="Assets\Scene10FlashEnd.cs" />
     <Compile Include="Assets\Scene3Manager.cs" />
     <Compile Include="Assets\Scripts\CameraLocations.cs" />
     <Compile Include="Assets\Scripts\General\LookAt.cs" />

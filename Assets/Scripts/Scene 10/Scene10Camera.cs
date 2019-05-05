@@ -8,6 +8,7 @@ public class Scene10Camera : MonoBehaviour
     public Texture[] StarGateTexture;
     public GameObject LeftStarGate;
     public GameObject RightStarGate;
+    public int StopIndex = 0;
     public int Delay = 0;
     public int ScreamIndex = 0;
 
@@ -29,7 +30,8 @@ public class Scene10Camera : MonoBehaviour
         zRotation += zRotate;
         transform.eulerAngles = new Vector3(0, 0, zRotation);
 
-        if(NextScream == true)
+        //Go through all the screams.
+        if(NextScream == true && ScreamIndex < Screaming.Length)
         {
             NextScream = false;
             StartCoroutine("MoveScream");
@@ -44,21 +46,27 @@ public class Scene10Camera : MonoBehaviour
     {
         yield return new WaitForSeconds(Delay);
         Screaming[ScreamIndex].SetActive(true);
-        //Change Texture of Star Gates.
-        LeftStarGate.GetComponent<Renderer>().material.mainTexture = StarGateTexture[ScreamIndex + 1];
-        RightStarGate.GetComponent<Renderer>().material.mainTexture = StarGateTexture[ScreamIndex + 1];
 
-        //Rotate 
-        zRotation += 90;
-
-        //Increase FOV
-        Camera.main.fieldOfView += 5f;
 
         //Remove screaming.
-        yield return new WaitForSeconds(0.5f);
-        Screaming[ScreamIndex].SetActive(false);
-        NextScream = true;
-        ScreamIndex++;
+        if (ScreamIndex < StopIndex)
+        {
+            //Change Texture of Star Gates.
+            LeftStarGate.GetComponent<Renderer>().material.mainTexture = StarGateTexture[ScreamIndex];
+            RightStarGate.GetComponent<Renderer>().material.mainTexture = StarGateTexture[ScreamIndex];
+
+            //Rotate 
+            zRotation += 90;
+
+            //Increase FOV
+            Camera.main.fieldOfView += 5f;
+
+            yield return new WaitForSeconds(0.5f);
+            Screaming[ScreamIndex].SetActive(false);
+            NextScream = true;
+            ScreamIndex++;
+        }
+
         //Do damage.
     }
 
