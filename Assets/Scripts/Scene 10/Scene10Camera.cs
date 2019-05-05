@@ -38,7 +38,7 @@ public class Scene10Camera : MonoBehaviour
         }
 
 
-        Camera.main.fieldOfView += 0.01f;
+        Camera.main.fieldOfView += 0.005f;
 
     }
 
@@ -59,7 +59,7 @@ public class Scene10Camera : MonoBehaviour
             zRotation += 90;
 
             //Increase FOV
-            Camera.main.fieldOfView += 5f;
+            Camera.main.fieldOfView += 6f;
 
             yield return new WaitForSeconds(0.5f);
             Screaming[ScreamIndex].SetActive(false);

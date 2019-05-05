@@ -20,7 +20,7 @@ public class Scene10FlashEnd : MonoBehaviour
     IEnumerator EndScene()
     {
 
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.1f);
         StartCoroutine("CallFlash");
         SceneManager.LoadScene(11);
 
