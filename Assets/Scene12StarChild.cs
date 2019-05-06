@@ -27,7 +27,7 @@ public class Scene12StarChild : MonoBehaviour
     //Enumerator to call flash out to end scene.
     IEnumerator StartFadeOut()
     {
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(17f);
         FadeOut.SetActive(true);
     }
 }

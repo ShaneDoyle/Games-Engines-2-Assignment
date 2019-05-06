@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class Scene10FlashEnd : MonoBehaviour
 {
+    //Public variables.
+    public GameObject LightingSound;
+
     //Start is called before the first frame update
     void Start()
     {
@@ -19,10 +22,9 @@ public class Scene10FlashEnd : MonoBehaviour
 
     IEnumerator EndScene()
     {
-
+        //End scene and load next.
+        LightingSound.SetActive(true);
         yield return new WaitForSeconds(0.1f);
-        StartCoroutine("CallFlash");
         SceneManager.LoadScene(11);
-
     }
 }

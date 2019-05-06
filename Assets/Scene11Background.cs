@@ -13,6 +13,6 @@ public class Scene11Background : MonoBehaviour
     //Update is called once per frame
     void Update()
     {
-        transform.Translate(0f, 0.0066f, 0f, Space.World);
+        transform.Translate(0f, 0.008f, 0f, Space.World);
     }
 }
