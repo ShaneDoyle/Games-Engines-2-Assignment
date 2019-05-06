@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class CameraLocations : MonoBehaviour
 {
-
+    //Public variables.
     public List<Vector3> CameraPos = new List<Vector3>();
-
     public int next = 0;
     public bool looped = true;
 
+    //Draw each camera point.
     public void OnDrawGizmos()
     {
         int count = looped ? (transform.childCount + 1) : transform.childCount;
@@ -23,7 +23,7 @@ public class CameraLocations : MonoBehaviour
         }
     }
 
-    // Use this for initialization
+    //Start is called before the first frame update.
     void Start()
     {
         CameraPos.Clear();

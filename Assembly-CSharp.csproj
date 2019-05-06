@@ -64,7 +64,7 @@
     <Compile Include="Assets\FG3D\Vendor\Unity\Shaders\Hair\HairRenderer.cs" />
     <Compile Include="Assets\FG3D\Vendor\Unity\Shaders\UniqueShadow\UniqueShadow.cs" />
     <Compile Include="Assets\FG3D\Vendor\Unity\Shaders\UniqueShadow\UniqueShadowSun.cs" />
-    <Compile Include="Assets\Scripts\General\AudioScript.cs" />
+    <Compile Include="Assets\Scripts\General\AudioDontDelete.cs" />
     <Compile Include="Assets\Scripts\General\LookAt.cs" />
     <Compile Include="Assets\Scripts\General\Path.cs" />
     <Compile Include="Assets\Scripts\General\SceneController.cs" />
@@ -78,8 +78,6 @@
     <Compile Include="Assets\Scripts\Scene 10\Scene10FlashEnd.cs" />
     <Compile Include="Assets\Scripts\Scene 10\StarGate.cs" />
     <Compile Include="Assets\Scripts\Scene 11\Scene11Background.cs" />
-    <Compile Include="Assets\Scripts\Scene 11\Scene11Camera.cs" />
-    <Compile Include="Assets\Scripts\Scene 11\Scene11StarChild.cs" />
     <Compile Include="Assets\Scripts\Scene 12\Scene12Background.cs" />
     <Compile Include="Assets\Scripts\Scene 12\Scene12StarChild.cs" />
     <Compile Include="Assets\Scripts\Scene 2\Background2.cs" />

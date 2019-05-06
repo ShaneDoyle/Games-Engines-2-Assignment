@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LevelChanger : MonoBehaviour
 {
+    //Public variables.
     public Animator animator;
     public GameObject[] EnemyMonkeys = new GameObject[4];
     public GameObject SceneManager;
@@ -11,15 +12,17 @@ public class LevelChanger : MonoBehaviour
     public AudioSource Music;
     public int counter = 0;
 
+    //Private variables.
     private bool MonkeysKilled = false;
     private bool FadeMusic = false;
 
+    //Get enemy monkeys.
     private void Start()
     {
         EnemyMonkeys = GameObject.FindGameObjectsWithTag("MonkeyGroup2");
     }
 
-    // Update is called once per frame
+    //Update is called once per frame.
     void Update()
     {
         //Check if enemy monkeys are dead.
@@ -32,6 +35,7 @@ public class LevelChanger : MonoBehaviour
                 counter++;
             }
         }
+        //If monkeys dead, get ready to change level.
         if(counter >= EnemyMonkeys.Length)
         {
             if (MonkeysKilled == false)
@@ -52,10 +56,9 @@ public class LevelChanger : MonoBehaviour
         }
     }
 
-    
+    //Change level.
     IEnumerator MonkeysDefeated()
     {
-        
         animator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(4f);
         FadeMusic = true;

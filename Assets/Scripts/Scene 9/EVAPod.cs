@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class EVAPod : MonoBehaviour
 {
+    //Public variables.
     public GameObject Astronaut;
     public GameObject EVAAstronaut;
     public PathFollow PathScript;
@@ -12,19 +13,13 @@ public class EVAPod : MonoBehaviour
     public AudioSource Eerie;
     public AudioSource Beeping;
     public GameObject FadeOut;
-
-
     public int PathNum = 0;
+
+    //Private variables.
     private bool PlaySound = true;
     private bool LoadScene = true;
 
-    //Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    //Update is called once per frame
+    //Update is called once per frame.
     void Update()
     {
         //Pathnum
@@ -40,7 +35,6 @@ public class EVAPod : MonoBehaviour
                 LoadScene = false;
                 StartCoroutine("NextScene");
             }
-
         }
 
         //Play sound.
@@ -62,7 +56,7 @@ public class EVAPod : MonoBehaviour
         }
     }
 
-
+    //Next scene, when reached back to final point.
     IEnumerator NextScene()
     {
         yield return new WaitForSeconds(22);

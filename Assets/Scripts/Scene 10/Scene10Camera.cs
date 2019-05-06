@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Scene10Camera : MonoBehaviour
 {
+    //Public variables.
     public GameObject[] Screaming;
     public Texture[] StarGateTexture;
     public GameObject LeftStarGate;
@@ -11,22 +12,17 @@ public class Scene10Camera : MonoBehaviour
     public int StopIndex = 0;
     public int Delay = 0;
     public int ScreamIndex = 0;
-
-
     public float zRotate = 0;
+
+    //Private variables.
     private float zRotation = 0;
     private bool NextScream = true;
     private float FieldOfView;
 
-    //Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    //Update is called once per frame
+    //Update is called once per frame.
     void Update()
     {
+        //Make Z rotation equal to the variable.
         zRotation += zRotate;
         transform.eulerAngles = new Vector3(0, 0, zRotation);
 
@@ -37,7 +33,7 @@ public class Scene10Camera : MonoBehaviour
             StartCoroutine("MoveScream");
         }
 
-
+        //Increase FOV.
         Camera.main.fieldOfView += 0.005f;
 
     }
@@ -46,7 +42,6 @@ public class Scene10Camera : MonoBehaviour
     {
         yield return new WaitForSeconds(Delay);
         Screaming[ScreamIndex].SetActive(true);
-
 
         //Remove screaming.
         if (ScreamIndex < StopIndex)
@@ -66,8 +61,5 @@ public class Scene10Camera : MonoBehaviour
             NextScream = true;
             ScreamIndex++;
         }
-
-        //Do damage.
     }
-
 }

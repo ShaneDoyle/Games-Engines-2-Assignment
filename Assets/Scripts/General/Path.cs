@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Path : MonoBehaviour
 {
-
+    //Public variables.
     public List<Vector3> waypoints = new List<Vector3>();
-
     public int next = 0;
     public bool looped = true;
 
     public void OnDrawGizmos()
     {
+        //Draw each vector point.
         int count = looped ? (transform.childCount + 1) : transform.childCount;
         Gizmos.color = Color.cyan;
         for (int i = 1; i < count; i++)
@@ -23,7 +23,7 @@ public class Path : MonoBehaviour
         }
     }
 
-    // Use this for initialization
+    //Start is called before the first frame update.
     void Start()
     {
         waypoints.Clear();
@@ -33,40 +33,4 @@ public class Path : MonoBehaviour
             waypoints.Add(transform.GetChild(i).position);
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    public Vector3 NextWaypoint()
-    {
-        return waypoints[next];
-    }
-
-    public void AdvanceToNext()
-    {
-        if (looped)
-        {
-            next = (next + 1) % waypoints.Count;
-        }
-        else
-        {
-            if (next != waypoints.Count - 1)
-            {
-                next++;
-            }
-        }
-    }
-
-    public bool IsLast()
-    {
-        return next == waypoints.Count - 1;
-    }
-
-
-
-
-
 }

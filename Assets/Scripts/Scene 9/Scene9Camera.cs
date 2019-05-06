@@ -4,25 +4,23 @@ using UnityEngine;
 
 public class Scene9Camera : MonoBehaviour
 {
-
-    //Variables.
+    //Public variables.
     public GameObject LookAtTarget;
     public CameraLocations CameraLocationScript;
     public List<Vector3> CameraPos;
 
-    //Private
+    //Private variables.
     private bool ChangeCameraLocation = true;
     private int CameraNumber = 0;
 
-
-    //Start is called before the first frame update
+    //Start is called before the first frame update.
     void Start()
     {
         //Get the points that the camera will jump to.
         CameraPos = CameraLocationScript.CameraPos;
     }
 
-    //Update is called once per frame
+    //Update is called once per frame.
     void Update()
     {
         if(ChangeCameraLocation == true)
@@ -32,6 +30,7 @@ public class Scene9Camera : MonoBehaviour
         }
     }
 
+    //Change the camera location.
     IEnumerator ChangeLocation()
     {
         yield return new WaitForSeconds(20);

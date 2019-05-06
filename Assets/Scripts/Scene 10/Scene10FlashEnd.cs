@@ -8,18 +8,13 @@ public class Scene10FlashEnd : MonoBehaviour
     //Public variables.
     public GameObject LightingSound;
 
-    //Start is called before the first frame update
+    //Start is called before the first frame update.
     void Start()
     {
         StartCoroutine("EndScene");
     }
 
-    //Update is called once per frame
-    void Update()
-    {
-
-    }
-
+    //End the scene after the flash.
     IEnumerator EndScene()
     {
         //End scene and load next.

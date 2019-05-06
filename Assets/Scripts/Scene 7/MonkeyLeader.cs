@@ -4,22 +4,24 @@ using UnityEngine;
 
 public class MonkeyLeader : MonoBehaviour
 {
-    private Animator myAnimator;
+    //Public variables.
     public string State = "Pursue";
     public GameObject target;
     public GameObject attackhitbox;
     public GameObject[] EnemyMonkeys = new GameObject[4];
     public GameObject Monolith;
     public int HP = 5;
-
-    //Built in
     public float ApeSpeed;
+
+    //Private variables.
+    private Animator myAnimator;
     private bool StateChange = true;
     private float FleeRange = 10f;
     private bool StrafeChange = true;
     private bool ApeSpeedReset = true;
 
-    IEnumerator NewState()
+    //
+    IEnumerator Flee()
     {
         ApeSpeed = Random.Range(0.6f, 1.2f);
         yield return new WaitForSeconds(0.75f);
@@ -29,6 +31,7 @@ public class MonkeyLeader : MonoBehaviour
         FleeRange = Random.Range(7f, 10f);
     }
 
+    //Stop fleeing.
     IEnumerator StopFlee()
     {
         yield return new WaitForSeconds(Random.Range(1.25f, 2f));
@@ -38,6 +41,7 @@ public class MonkeyLeader : MonoBehaviour
         State = "Pursue";
     }
 
+    //Strafe.
     IEnumerator Strafing()
     {
         yield return new WaitForSeconds(Random.Range(0.5f, 1.5f));
@@ -51,6 +55,7 @@ public class MonkeyLeader : MonoBehaviour
     IEnumerator InflictDamage()
     {
         yield return new WaitForSeconds(ApeSpeed/2f);
+
         //Do damage.
         if (Vector3.Distance(target.transform.position, transform.position) < 1.75f)
         {
@@ -69,7 +74,7 @@ public class MonkeyLeader : MonoBehaviour
         }
     }
 
-    //Used on Death
+    //Used on Death.
     IEnumerator StopAnimationSpeed()
     {
         ApeSpeed = 1.2f;
@@ -98,10 +103,8 @@ public class MonkeyLeader : MonoBehaviour
         }
         else
         {
-            //target = Monolith;
+            //Do nothing.
         }
-        
-
     }
 
     //Start variables.
@@ -121,9 +124,9 @@ public class MonkeyLeader : MonoBehaviour
         ChooseTarget();
     }
 
+    //Behaviour managing.
     void Update()
     {
-
         //Death manager.
         if (HP <= 0)
         {
@@ -135,6 +138,7 @@ public class MonkeyLeader : MonoBehaviour
             myAnimator.SetFloat("HSpeed", 0);
             myAnimator.SetBool("TurningRight", false);
             myAnimator.SetBool("TurningLeft", false);
+
             //Reset Ape Speed on Death.
             if (ApeSpeedReset == true)
             {
@@ -144,8 +148,6 @@ public class MonkeyLeader : MonoBehaviour
         }
         else
         { 
-
-
             //Cause casual strafing.
             if (StrafeChange == true)
             {
@@ -164,8 +166,6 @@ public class MonkeyLeader : MonoBehaviour
                 Quaternion newRot = Quaternion.LookRotation(pos);
                
                 transform.rotation = Quaternion.Lerp(transform.rotation, newRot, 0.1f);
-                
-                //transform.LookAt(targetPosition);
             }
         }
 
@@ -175,13 +175,10 @@ public class MonkeyLeader : MonoBehaviour
             State = "Idle";
         }
 
-
         //Affect animator to increase ape speed.
         myAnimator.speed = ApeSpeed;
 
-
-
-        //Monkey Behaviours!
+        //Monkey Behaviour States!
         if (State == "Dead")
         {
             myAnimator.SetLayerWeight(1, 1f);
@@ -194,7 +191,6 @@ public class MonkeyLeader : MonoBehaviour
             ApeSpeed = 0.5f;
         }
 
-        //Monkey Behaviours!
         else if (State == "Pursue")
         {
             myAnimator.SetFloat("VSpeed", 1);
@@ -215,10 +211,9 @@ public class MonkeyLeader : MonoBehaviour
             myAnimator.SetInteger("CurrentAction", 4);
             if (StateChange == true)
             {
-                //ApeSpeed = Random.Range(0.6f, 1.2f);
                 StartCoroutine("InflictDamage");
                 StateChange = false;
-                StartCoroutine("NewState");
+                StartCoroutine("Flee");
             }
         }
         else if (State == "Flee")
@@ -231,200 +226,10 @@ public class MonkeyLeader : MonoBehaviour
                 StartCoroutine("StopFlee");
             }
         }
-
-
-
-
-
-        if (Input.GetKey("a") && (myAnimator.GetInteger("CurrentAction") == 0))
-        {
-
-            transform.Rotate(Vector3.down * Time.deltaTime * 180.0f);
-
-            if ((Input.GetAxis("Vertical") == 0f) && (Input.GetAxis("Horizontal") == 0))
-            {
-                myAnimator.SetBool("TurningLeft", true);
-            }
-
-        }
         else
         {
             myAnimator.SetBool("TurningLeft", false);
-        }
-
-        //Same thing for E key, just rotating the other way!
-        if (Input.GetKey("d") && (myAnimator.GetInteger("CurrentAction") == 0))
-        {
-            transform.Rotate(Vector3.up * Time.deltaTime * 180.0f);
-            if ((Input.GetAxis("Vertical") == 0f) && (Input.GetAxis("Horizontal") == 0))
-            {
-                myAnimator.SetBool("TurningRight", true);
-            }
-
-        }
-        else
-        {
-            myAnimator.SetBool("TurningRight", false);
-        }
-
-
-        if (Input.GetKeyDown("4"))
-        {
-            myAnimator.SetLayerWeight(1, 1f);
-            myAnimator.SetInteger("CurrentAction", 4);
-        }
-
-        if (Input.GetKeyUp("4"))
-        {
-            myAnimator.SetInteger("CurrentAction", 0);
-        }
-
-        if (Input.GetKeyDown("5"))
-        {
-            myAnimator.SetLayerWeight(1, 1f);
-            myAnimator.SetInteger("CurrentAction", 5);
-        }
-
-        if (Input.GetKeyUp("5"))
-        {
-            myAnimator.SetInteger("CurrentAction", 0);
-        }
-
-        /*
-        if (Input.GetKeyDown("6"))
-        {
-            myAnimator.SetLayerWeight(1, 1f);
-            myAnimator.SetInteger("CurrentAction", 6);
-        }
-
-        if (Input.GetKeyUp("6"))
-        {
-            myAnimator.SetInteger("CurrentAction", 0);
-        }
-
-        //myAnimator.SetFloat("VSpeed", Input.GetAxis("Vertical"));
-       // myAnimator.SetFloat("HSpeed", Input.GetAxis("Horizontal"));
-       */
-
-    }
-}
-        /*
-        if (Input.GetButtonDown("Jump"))
-        {
-            myAnimator.SetBool("Jumping", true);
-            Invoke("StopJumping", 0.1f);
-        }
-
-
-        if (Input.GetKey("a") && (myAnimator.GetInteger("CurrentAction") == 0))
-        {
-
-            transform.Rotate(Vector3.down * Time.deltaTime * 180.0f);
-
-            if ((Input.GetAxis("Vertical") == 0f) && (Input.GetAxis("Horizontal") == 0))
-            {
-                myAnimator.SetBool("TurningLeft", true);
-            }
-
-        }
-        else
-        {
-            myAnimator.SetBool("TurningLeft", false);
-        }
-
-        //Same thing for E key, just rotating the other way!
-        if (Input.GetKey("d") && (myAnimator.GetInteger("CurrentAction") == 0))
-        {
-            transform.Rotate(Vector3.up * Time.deltaTime * 180.0f);
-            if ((Input.GetAxis("Vertical") == 0f) && (Input.GetAxis("Horizontal") == 0))
-            {
-                myAnimator.SetBool("TurningRight", true);
-            }
-
-        }
-        else
-        {
             myAnimator.SetBool("TurningRight", false);
         }
     }
 }
-
-
-        /*
-        if (Input.GetKeyDown("1"))
-        {
-            if (myAnimator.GetInteger("CurrentAction") == 0)
-            {
-                myAnimator.SetInteger("CurrentAction", 1);
-            }
-            else if (myAnimator.GetInteger("CurrentAction") == 1)
-            {
-                myAnimator.SetInteger("CurrentAction", 0);
-            }
-        }
-
-
-        if (Input.GetKeyDown("2"))
-        {
-            if (myAnimator.GetInteger("CurrentAction") == 0)
-            {
-                myAnimator.SetInteger("CurrentAction", 2);
-            }
-            else if (myAnimator.GetInteger("CurrentAction") == 2)
-            {
-                myAnimator.SetInteger("CurrentAction", 0);
-            }
-        }
-
-        if (Input.GetKeyDown("3"))
-        {
-            myAnimator.SetLayerWeight(1, 1f);
-            myAnimator.SetInteger("CurrentAction", 3);
-        }
-
-        if (Input.GetKeyUp("3"))
-        {
-            myAnimator.SetInteger("CurrentAction", 0);
-        }
-
-
-        if (Input.GetKeyDown("4"))
-        {
-            myAnimator.SetLayerWeight(1, 1f);
-            myAnimator.SetInteger("CurrentAction", 4);
-        }
-
-        if (Input.GetKeyUp("4"))
-        {
-            myAnimator.SetInteger("CurrentAction", 0);
-        }
-
-        if (Input.GetKeyDown("5"))
-        {
-            myAnimator.SetLayerWeight(1, 1f);
-            myAnimator.SetInteger("CurrentAction", 5);
-        }
-
-        if (Input.GetKeyUp("5"))
-        {
-            myAnimator.SetInteger("CurrentAction", 0);
-        }
-
-        if (Input.GetKeyDown("6"))
-        {
-            myAnimator.SetLayerWeight(1, 1f);
-            myAnimator.SetInteger("CurrentAction", 6);
-        }
-
-        if (Input.GetKeyUp("6"))
-        {
-            myAnimator.SetInteger("CurrentAction", 0);
-        }
-
-    }
-
-    void StopJumping()
-    {
-        myAnimator.SetBool("Jumping", false);
-    }
-    */

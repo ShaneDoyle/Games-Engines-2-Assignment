@@ -4,19 +4,20 @@ using UnityEngine;
 
 public class CameraManager : MonoBehaviour
 {
-    //Variables
+    //Public variables.
     public GameObject AerialCam;
     public GameObject MonkeyCam;
 
+    //Private variables.
     private bool CamSwitch = true;
 
-    //Start is called before the first frame update
+    //Start is called before the first frame update.
     void Start()
     {
         MonkeyCam.SetActive(false);
     }
 
-    //Update is called once per frame
+    //Update is called once per frame.
     void Update()
     {
         if(CamSwitch == true)
@@ -26,8 +27,7 @@ public class CameraManager : MonoBehaviour
         }
     }
 
-
-    //Used on Death
+    //Used on Death.
     IEnumerator Camera()
     {
         AerialCam.SetActive(true);

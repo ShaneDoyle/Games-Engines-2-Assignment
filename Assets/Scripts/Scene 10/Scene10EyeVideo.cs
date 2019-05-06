@@ -13,16 +13,9 @@ public class Scene10EyeVideo : MonoBehaviour
         StartCoroutine("CallFlash");
     }
 
-    //Update is called once per frame.
-    void Update()
-    {
-        
-    }
-
     //Enumerator to call flash out to end scene.
     IEnumerator CallFlash()
     {
-
         yield return new WaitForSeconds(19f);
         FlashCall.SetActive(true);
         Destroy(this.gameObject);

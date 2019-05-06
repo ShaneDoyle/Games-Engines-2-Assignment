@@ -4,18 +4,22 @@ using UnityEngine;
 
 public class Seek : MonoBehaviour
 {
-    private float Mass = 15;
+    //Public variables.
     public float MaxVelocity = 3;
-    private float MaxForce = 15;
-
-    private Vector3 velocity;
     public Transform target;
 
+    //Private variables.
+    private float Mass = 15;
+    private float MaxForce = 15;
+    private Vector3 velocity;
+
+    //Start is called before the first frame update.
     private void Start()
     {
         velocity = Vector3.zero;
     }
 
+    //Update is called once per frame.
     private void Update()
     {
         var desiredVelocity = target.transform.position - transform.position;
@@ -27,10 +31,5 @@ public class Seek : MonoBehaviour
 
         velocity = Vector3.ClampMagnitude(velocity + steering, MaxVelocity);
         transform.position += velocity * Time.deltaTime;
-        //transform.forward = velocity.normalized;
-
-        Debug.DrawRay(transform.position, velocity.normalized * 2, Color.green);
-        Debug.DrawRay(transform.position, desiredVelocity.normalized * 2, Color.magenta);
-
     }
 }
