@@ -65,7 +65,7 @@ public class EVAPod : MonoBehaviour
 
     IEnumerator NextScene()
     {
-        yield return new WaitForSeconds(25);
+        yield return new WaitForSeconds(22);
         SceneManager.LoadScene(10);
     }
 
